@@ -1,0 +1,23 @@
+
+<form  [formGroup]="loginForm">
+    <div>
+      <label for="email">UserName:</label>
+      <input id="email" formControlName="username" type="username" placeholder="Enter your UserName">
+      <!-- <div *ngIf="loginForm.controls.email.invalid && loginForm.controls.email.touched">
+        Please enter a valid email.
+      </div> -->
+    </div>
+  
+    <div>
+      <label for="password">Password</label>
+      <input id="password" formControlName="password" type="password" placeholder="Enter your password">
+      <!-- <div *ngIf="loginForm.controls.password.invalid && loginForm.controls.password.touched">
+        Password is required.
+      </div> -->
+    </div>
+  
+    <button type="submit" (click)="userLogin()">Login</button>
+    <button (click)="userRegistration()">User Registration</button>
+  </form>
+
+  

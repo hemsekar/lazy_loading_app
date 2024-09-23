@@ -1,0 +1,25 @@
+<!-- <h3>User Details</h3>
+<table *ngIf="userDetails" border="1">
+    <tr *ngFor="let details of userDetails">
+        <td>{{details.id}}</td>
+         <td>{{details.username}}</td>
+        <td>{{details.email}}</td>
+        <td>{{details.password}}</td>
+        <td>{{details.confirmPassword}}</td> 
+        <td><button (click)="editDetails()">Edit</button></td>
+    </tr>
+</table> -->
+
+
+
+
+  <table border="1">
+    <tr *ngFor="let user of users$ | async">
+       <td>{{user.id}}</td>
+      <td>{{user.username}}</td>
+     <td>{{user.email}}</td>
+       <td>{{user.password}}</td>
+       <td>{{user.confirmPassword}}</td>
+       <td><button (click)="editUser(user)">Edit</button></td>
+    </tr>
+  </table>

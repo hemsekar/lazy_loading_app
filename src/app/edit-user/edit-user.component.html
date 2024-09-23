@@ -1,0 +1,25 @@
+<h3>Edit Details</h3>
+<form [formGroup]="updateForm">
+     <div>
+        <label for="id">Id</label>
+        <input id='id' type="text" formControlName="id">
+    </div>
+   <div>
+        <label for="username">UserName</label>
+        <input id='username' type="text" formControlName="username">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="text" formControlName="email">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" type="text" formControlName="password">
+    </div>
+    <div>
+        <label for="confirmpassword">ConfirmPassword</label>
+        <input id="confirmpassword" type="text" formControlName="confirmPassword">
+    </div>
+    <button (click)="formUpdate()">Update</button> 
+</form>
+
